@@ -1,0 +1,121 @@
+/*
+     give the following specification as 
+     margin and padding as 0;
+        box-sizing  as border-box;
+     font-family as  "Open Sans", sans-serif;
+    
+    
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.carousel-item img{  
+    width: 100%;
+    height: 93vh;
+ }
+    
+.About_Us{
+       /* 
+       Define the  min-width: 90% and max-height: 700px*/
+    min-width: 90%;
+    max-height: 700px;
+    }
+    
+.services .row{
+    padding-right:0;
+    padding-left:0;
+}
+.row my-5{
+        /* define the display such that it behaves like a FLEXBOX
+        display: **;*/
+    background: skyblue;
+
+}
+.offer_style{
+        /* 
+        
+        Set the background color as per your wish
+        */
+
+    background-color: palevioletred;
+        
+}
+.Juhuimg{
+        height: 20rem;
+    }
+.footer{
+        background-color: greenyellow;
+        text-align: center;
+        margin-bottom: -3rem;
+    }
+.footer2{
+    background-color: greenyellow;
+    text-align: center;
+    margin-top: 11rem;
+}
+    
+.card-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+      
+.medium-img {
+    max-height: 500px; /* Adjusted height for medium size */
+    width: auto;
+    object-fit: cover; 
+}
+
+
+      /*responsive css code*/
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .Juhuimg{
+        height: 15rem;
+    }
+    .footer{
+        margin-bottom: -2rem; 
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 85vh;
+    }
+    .footer2 {
+        margin-top: 10rem; 
+    }
+}
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .offer_style {
+        background: steelblue; 
+    }
+}
+
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .Juhuimg {
+        height: 25rem;
+    }
+}
+
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .carousel-item img {
+        height: 90vh; /* Restore full carousel height for very large screens */
+    }
+}
+ 
